@@ -23,8 +23,8 @@ body {
 }
 
 /* Login to Qontem */
-.title{
-  font-family: 'Times New Roman', Times, serif;
+.title {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Font Awesome Icons in input*/
@@ -40,8 +40,13 @@ body {
   font-style: normal;
 }
 
-.form-control::placeholder {
-  padding-left: 2rem;
+/* form input */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding-left: 45px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 
 /*Login button style */
@@ -53,10 +58,26 @@ body {
   );
 }
 
+/* services */
+.services a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   .min-container {
-    max-width: 450px;
+    max-width: 500px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1020px) {
+  .tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
   }
 }
