@@ -1,10 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+/* global font Poppins */
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #e8e9e9ff;
 }
 
+/* logo */
 .logo img {
   width: 237px;
   height: 138px;
+}
+
+/* Form Area */
+.form-area {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 5px 40px, rgba(0, 0, 0, 0.1) 0 5px 10px;
+  border-bottom: 10px solid transparent;
+  transition: box-shadow 0.25s;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Login to Qontem */
+.title{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Font Awesome Icons in input*/
+.min-container .form-area form .fa {
+  top: 13px;
+  left: 1rem;
+}
+
+.form-group a i {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  font-size: 5rem;
+  font-style: normal;
+}
+
+.form-control::placeholder {
+  padding-left: 2rem;
+}
+
+/*Login button style */
+.btn-orange {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 166, 0, 0.85) 0%,
+    rgba(255, 166, 0, 0.7225) 100%
+  );
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .min-container {
+    max-width: 450px;
+    margin: 0;
+  }
+}
+.min-container {
+  margin: 0 auto;
 }

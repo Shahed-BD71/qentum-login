@@ -7,15 +7,142 @@
     <title>Document</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-light">
-    <div class="text-center logo">
+  <body>
+    <!-- logo section -->
+    <header class="text-center logo">
       <img src="assets/logo.png" alt="Qontem logo" />
-    </div>
+    </header>
+    <!-- main area -->
+    <main>
+      <div class="container overflow-hidden">
+        <div class="row">
+          <!-- hero section start -->
+          <section class="md-my-5 col-md-6">
+            <div class="mt-5 text-center">
+              <h1 class="mb-5 fw-bold">It’s Simple. It’s Smart</h1>
+              <div class="d-none d-sm-block">
+                <img class="img-fluid" src="assets/image1.gif" alt="images" />
+              </div>
+            </div>
+          </section>
+          <!-- hero section end.. -->
+          <div class="my-3 col-md-6">
+            <!-- form area start -->
+            <section class="sm-container min-container">
+              <div class="form-area position-relative">
+                <div class="text-center">
+                  <h1 class="h2 title">Login to Qontem</h1>
+                  <p class="mb-2 small text-scarlet">
+                    This is a secure system and you will need to provide your
+                    login details to access the site.
+                  </p>
+                </div>
+                <form id="loginForm" class="m-4">
+                  <div class="my-4 form-group position-relative">
+                    <i class="fa fa-envelope fa-lg icon position-absolute"></i>
+                    <input
+                      class="rounded shadow form-control input-lg"
+                      id="email"
+                      name="email"
+                      type="text"
+                      placeholder="Email"
+                      required=""
+                    />
+                  </div>
+                  <div class="my-4 form-group position-relative">
+                    <i
+                      class=" fa fa-unlock-alt fa-lg position-absolute left: 15px top: 40px"
+                    ></i>
+                    <input
+                      class="rounded shadow form-control input-lg"
+                      id="password"
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                      required=""
+                    />
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 px-sm-3 col-sm 4 col-6 col-xs-12 text-nowrap">
+                      <input
+                        type="checkbox"
+                        value="lsRememberMe"
+                        id="rememberMe"
+                      />
+                      <label for="rememberMe">Remember me</label>
+                    </div>
+                    <div class="col-md-6 col-sm-6 px-sm-3 col-6 col-xs-12 text-nowrap">
+                      <a href="#" id="forgot" class="text-decoration-none text-dark">Forgot Password?</a>
+                    </div>
+                  </div>
+                  <div class="my-4 text-center">
+                    <button
+                      class="text-white rounded btn-orange form-control btn-lg text-uppercase"
+                      type="submit"
+                    >
+                      Login
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <p>Do not have an account? <a class="fw-bold text-decoration-none text-dark" href="#">Register</a></p>
+                  </div>
+                </form>
+                <!--form end & service section start-->
+                <section>
+                  <div class="row m-xs-5 p-xs-5">
+                    <div class="col-md-3 col-6">
+                      <img class="img-fluid" src="assets/bike.gif" alt="" />
+                      <div class='flex-row d-flex align-items-center'>
+                        <img src="./assets/dot.svg" alt="" />
+                        <span>Courier</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <img class="img-fluid" src="assets/phone.gif" alt="" />
+                      <div class='d-flex align-items-center'>
+                        <img src="./assets/dot.svg" alt="" />
+                        <span>Finance</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6 xs-w-25">
+                      <img class="img-fluid" src="assets/confirm.gif" alt="" />
+                      <div class='d-flex align-items-center'>
+                        <img src="./assets/dot.svg" alt="" />
+                        <span>WMS</span>
+                      </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                      <img class="img-fluid" src="assets/cart.gif" alt="" />
+                      <div class='d-flex align-items-center'>
+                        <img src="./assets/dot.svg" alt="" />
+                        <span>WMS</span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <!-- service section end -->
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer start -->
+    <footer class="text-center">
+      <p>All RIghts Reserved &#124; QONTEM</p>
+    </footer>
   </body>
 </html>
